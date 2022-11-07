@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-		"deploy": "npm i --force && npm run build && npx pm2 start dist/main.js",
-		"redeploy": "npm i --force && npm run build && npx pm2 reload all",
+    "deploy": "npm i --force && npm run build && npx pm2 start dist/main.js",
+    "redeploy": "npm i --force && npm run build && npx pm2 reload all",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -26,6 +26,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "pm2": "^5.2.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
