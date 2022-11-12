@@ -1,8 +1,11 @@
-ame: Actions 이름
-
+name: aws codebuild
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   buildAndTest:
